@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterProductActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:overScrollMode="ifContentScrolls"
+        android:padding="50px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Product Registration"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sp_min"
+            android:layout_marginEnd="4dp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="product name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="description"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="price ( in $ )"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textContent"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:editable="false"
+                android:hint="scan product barcode ->" />
+
+            <ImageButton
+                android:id="@+id/scanBtn"
+                android:layout_width="200px"
+                android:layout_height="90px"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="#D0D0D0"
+                android:src="@drawable/baseline_qr_code_2_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFE9FF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IVPreviewImage"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:layout_margin="10dp" />
+
+            <ImageButton
+                android:id="@+id/BSelectImage"
+                android:layout_width="200px"
+                android:layout_height="90px"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="#DBDBDB"
+                android:src="@drawable/baseline_add_photo_alternate_24" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/reOrderQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="re-order quantity"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/packedHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="pacled height"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/packedWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="pacled weight"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/packedWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="pacled width"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/packedDepth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="pacled depth"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/submitProductButton"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#0064FD"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
